@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/Rosy581/black_jacking_off#readme",
   "dependencies": {
-    "firebase": "^10.12.2"
+    "discord.js": "^14.15.3",
+    "dotenv": "^16.4.5",
+    "firebase": "^10.12.2",
+    "firebase-admin": "^12.2.0"
   }
 }
