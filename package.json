@@ -1,0 +1,22 @@
+{
+  "name": "black_jack",
+  "version": "1.0.0",
+  "description": "Gamble your problems away",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "\"idk\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rosy581/black_jacking_off.git"
+  },
+  "author": "Rosy581",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rosy581/black_jacking_off/issues"
+  },
+  "homepage": "https://github.com/Rosy581/black_jacking_off#readme",
+  "dependencies": {
+    "firebase": "^10.12.2"
+  }
+}
