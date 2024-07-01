@@ -3,7 +3,7 @@ const admin = require("firebase-admin");
 const run = require("./register-commands").run;
 const cmds = require("./register-commands.js").cmnds;
 const serviceAccount = require("../ServiceAccountKey");
-const { ifDef, pull, pullColl, sleep } = require("../script");
+const { ifDef, pull, pullColl, sleep } = require("../script.js");
 const discordJs = require("discord.js");
 const {
 	Client,
