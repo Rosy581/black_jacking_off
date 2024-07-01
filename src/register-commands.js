@@ -8,8 +8,24 @@ const { describe } = require("node:test");
 
 const cmnds = [
     {
-        name: "deala",
+        name: "deal",
         description: "Gamble your life away",
+    },{
+        name: "pay",
+        description: "Send money to another user",
+        options:[
+            {
+                name:"amount",
+                description:"Amount you want to send to another person",
+                type:ApplicationCommandOptionType.Number,
+                required:true
+            },{
+                name:"user",
+                description:"Ping/@ user here to pay them",
+                type:ApplicationCommandOptionType.User,
+                required:true
+            }
+        ]
     }
 ]
 
