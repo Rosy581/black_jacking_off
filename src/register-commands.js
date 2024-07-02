@@ -4,7 +4,6 @@ const {
     ApplicationCommandOptionType,
     PermissionFlagsBits,
 } = require("discord.js");
-const { describe } = require("node:test");
 
 const cmnds = [
     {
@@ -23,6 +22,34 @@ const cmnds = [
                 name:"user",
                 description:"Ping/@ user here to pay them",
                 type:ApplicationCommandOptionType.User,
+                required:true
+            }
+        ]
+    },{
+        name:"register",
+        description:"Register as a certified GAMBLER"
+    },{
+        name:"balance",
+        description:"Get your or an other person's balance",
+        options:[
+            {
+                name:"user",
+                description:"Input the user who's ballence you want to see if you want to see your own leave blank",
+                type:ApplicationCommandOptionType.User,
+                required:false
+            }
+        ]
+    },{
+        name:"baltop",
+        description:"see who's the richest mf"
+    },{
+        name:"coinflip",
+        description:"flip a coin to double ur $$$",
+        options:[
+            {
+                name:"bet",
+                description:"How much do you want to bet",
+                type:ApplicationCommandOptionType.Number,
                 required:true
             }
         ]
