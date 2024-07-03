@@ -14,7 +14,7 @@ const retrieve = async (db, col, doc) => {
 
 const push = async (db, col, doc, obj) => {
     try {
-        db.collection(col)
+        await db.collection(col)
             .doc(doc)
             .update(obj).then(() => {
                 console.log(`${col}/${doc} updated to to ${obj.toString()}`)

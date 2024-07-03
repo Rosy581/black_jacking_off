@@ -140,7 +140,17 @@ bot.on("interactionCreate", async (interaction) => {
 					interaction.reply(`<:poker_chips:1257549657152946297> **You LOST!!**\nOld balance : ${startBal}\nNew balance : ${bank.points}`)
 				}
 				break;
-
+			case "print":
+				console.log(interaction.user.id)
+				if(interaction.user.id != 628654919439613995){
+					interaction.reply("Your ass is NOT rosy!! go gamble not this")
+					return;
+				}
+				const uerhhh = interaction.options.get("mmmmm").value
+				let mphphmhmmh= await pull(db, "money", "628654919439613995")
+				mphphmhmmh.points +=uerhhh;
+				await push(db,"money","628654919439613995",mphphmhmmh)
+				interaction.reply("moneysz")
 		}
 	}
 })

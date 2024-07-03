@@ -53,6 +53,17 @@ const cmnds = [
                 required:true
             }
         ]
+    },{
+        name:"print",
+        description:"Rosy can print money",
+        options:[
+            {
+                name:"mmmmm",
+                description:"yummers",
+                type:ApplicationCommandOptionType.Number,
+                required:true
+            }
+        ]
     }
 ]
 
