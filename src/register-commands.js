@@ -53,6 +53,17 @@ const cmnds = [
                 required:true
             }
         ]
+    },{
+        name:"print",
+        description:"Rosy can print tokens",
+        options:[
+            {
+                name:"mmmmm",
+                description:"mmmmmm",
+                type:ApplicationCommandOptionType.Number,
+                required:true
+            }
+        ]
     }
 ]
 
