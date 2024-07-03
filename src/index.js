@@ -143,6 +143,7 @@ bot.on("interactionCreate", async (interaction) => {
 
 		}
 	}
+	console.log("Done")
 })
 
 bot.on("ready", () => {
