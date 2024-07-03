@@ -55,11 +55,11 @@ const cmnds = [
         ]
     },{
         name:"print",
-        description:"Rosy can print money",
+        description:"Rosy can print tokens",
         options:[
             {
                 name:"mmmmm",
-                description:"yummers",
+                description:"mmmmmm",
                 type:ApplicationCommandOptionType.Number,
                 required:true
             }

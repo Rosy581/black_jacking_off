@@ -153,6 +153,7 @@ bot.on("interactionCreate", async (interaction) => {
 				interaction.reply("moneysz")
 		}
 	}
+	console.log("Done")
 })
 
 bot.on("ready", () => {
