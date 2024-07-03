@@ -32,7 +32,7 @@ admin.initializeApp({
 const db = admin.firestore()
 
 const newUser = async (user) => {
-	const doc = await pull(db, "money", user.interaction.user.id)
+	const doc = await pull(db, "money", user.id)
 	console.log(!!doc)
 	if (!!doc) {
 		console.log("thang")
