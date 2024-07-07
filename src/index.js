@@ -39,7 +39,7 @@ const newUser = async (user) => {
 		return false
 	} else {
 		db.collection("money")
-			.doc(user.interaction.user.id)
+			.doc(user.id)
 			.set({
 				points: 100,
 				username: user.username
@@ -82,7 +82,7 @@ bot.on("interactionCreate", async (interaction) => {
 				if (await newUser(interaction.user)) {
 					interaction.reply("You've been registered! Your new balanece is 100 gcerver tokens!")
 				} else {
-					interaction.reply("You've already registered idIOT!!!")
+					interaction.reply("You've already registered IDIOT!!!")
 				}
 				break;
 			case "balance":
